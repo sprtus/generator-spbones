@@ -1,0 +1,13 @@
+{
+    "name": "<%= name %>",    
+    "scripts": {
+      "dev": "webpack",
+      "production": "webpack -p",
+      "watch": "webpack --watch",
+      "deploy": "node ./deploy"
+    },
+    "dependencies": {
+        "spsave": "^3.1.0",
+        "webpack": "^2.7.0"
+    }     
+}
