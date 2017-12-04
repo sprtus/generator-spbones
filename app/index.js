@@ -63,20 +63,21 @@ module.exports = class extends Generator {
       );
 
       this.fs.copy(
-        this.templatePath('blank.nothing'),
-        this.destinationPath('resources/js/app.js')
+        this.templatePath('app.js'),
+        this.destinationPath('src/js/app.js')
       );
       this.fs.copy(
-        this.templatePath('blank.nothing'),
-        this.destinationPath('resources/css/app.css')
+        this.templatePath('app.css'),
+        this.destinationPath('src/css/app.css')
       );
-      // this.fs.mkdirp('resources');
-      // this.fs.mkdirp('reseouces/js');
-      // this.fs.mkdirp('resources/css');
-      // this.fs.mkdirp('resources/fonts');
-      // this.fs.mkdirp('resources/img');
-      // this.fs.mkdirp('resources/webparts');
       
+      this.npmInstall(['webpack'], { 'save-dev': true });
+      this.npmInstall(['spsave'], { 'save-dev': true });
+      this.npmInstall(['css-loader'], { 'save-dev': true });
+      this.npmInstall(['node-sass'], { 'save-dev': true });
+      this.npmInstall(['sass-loader'], { 'save-dev': true });
+      this.npmInstall(['copy-webpack-plugin'], { 'save-dev': true });
+
       done();
     });
   }

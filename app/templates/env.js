@@ -1,6 +1,6 @@
 module.exports = {
-  appFolder: <%= appFolder %>
-  site: <%= url %>,
-  username: <%= username %>,
-  password: <%= password %>
+  appFolder: "<%= appFolder %>",
+  site: "<%= url %>",
+  username: "<%= username %>",
+  password: "<%= password %>"
 }

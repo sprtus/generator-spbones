@@ -7,7 +7,5 @@
       "deploy": "node ./deploy"
     },
     "dependencies": {
-        "spsave": "^3.1.0",
-        "webpack": "^2.7.0"
     }     
 }
