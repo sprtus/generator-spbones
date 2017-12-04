@@ -15,7 +15,7 @@ module.exports = {
     ]
   },
   output: {
-    filename: `masterpage/${env.appFolder}/js/[name].js`,
+    filename: `masterpage/${env.appFolder}/js/[name].bundle.js`,
     path: path.resolve(__dirname, `dist/catalogs/`)
   },
   /**
@@ -70,7 +70,7 @@ module.exports = {
     ]),
     new ExtractTextPlugin({
       // define where to save the file
-      filename: "dist/catalogs/masterpage/css/[name].bundle.css",
+      filename: `masterpage/${env.appFolder}/css/[name].bundle.css`,
       allChunks: true
     }),
     new webpack.LoaderOptionsPlugin({
