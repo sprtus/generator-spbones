@@ -68,7 +68,7 @@ module.exports = class extends Generator {
       );
       this.fs.copy(
         this.templatePath('app.css'),
-        this.destinationPath('src/css/app.css')
+        this.destinationPath('src/css/app.scss')
       );
       
       this.npmInstall(['webpack'], { 'save-dev': true });
@@ -76,6 +76,7 @@ module.exports = class extends Generator {
       this.npmInstall(['css-loader'], { 'save-dev': true });
       this.npmInstall(['node-sass'], { 'save-dev': true });
       this.npmInstall(['sass-loader'], { 'save-dev': true });
+      this.npmInstall(['extract-text-webpack-plugin'], { 'save-dev': true });
       this.npmInstall(['copy-webpack-plugin'], { 'save-dev': true });
 
       done();
