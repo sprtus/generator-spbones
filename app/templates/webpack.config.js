@@ -16,7 +16,7 @@ module.exports = {
   },
   output: {
     filename: `masterpage/${env.appFolder}/js/[name].bundle.js`,
-    path: path.resolve(__dirname, `dist/catalogs/`)
+    path: path.resolve(__dirname, `dist/_catalogs/`)
   },
   /**
    * Use source-map to create source maps during development builds

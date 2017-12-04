@@ -14,9 +14,9 @@ const config = {
 
 // file options
 const files = {
-  glob: 'dist/_catalogs/**/*.*',
+  glob: 'dist/**/*',
   base: '_catalogs',
-  folder: ''
+  folder: '_catalogs'
 }
 
 // credentials for SP connection
