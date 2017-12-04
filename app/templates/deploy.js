@@ -2,7 +2,7 @@
 const spsave = require('spsave').spsave
 
 // load env.js configuration file
-const env = require('./env')
+const env = require('./env.js')
 
 // configuration options
 const config = {
@@ -14,9 +14,9 @@ const config = {
 
 // file options
 const files = {
-  glob: 'dist/_catalogs/**/*.*',
+  glob: 'dist/**/*',
   base: '_catalogs',
-  folder: ''
+  folder: '_catalogs'
 }
 
 // credentials for SP connection
