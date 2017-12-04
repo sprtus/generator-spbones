@@ -1,0 +1,35 @@
+{
+  "name": "generator-spbones",
+  "version": "0.0.1",
+  "description": "Yeoman generator for a SharePoint front-end workspace.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oldrivercreative/generator-spbones.git"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "sharepoint",
+    "sp",
+    "share",
+    "point",
+    "javascript",
+    "generator",
+    "spbones"
+  ],
+  "author": "David Burgess <david@oldrivercreative.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oldrivercreative/generator-spbones/issues"
+  },
+  "homepage": "https://github.com/oldrivercreative/generator-spbones#readme",
+  "dependencies": {
+    "yeoman-generator": "^2.0.1"
+  },
+  "files": [
+    "app"
+  ]
+}
