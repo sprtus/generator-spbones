@@ -2,6 +2,7 @@ const path = require("path");
 const webpack = require('webpack')
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 const env = require("./env.js");
 
@@ -75,6 +76,7 @@ module.exports = {
     }),
     new webpack.LoaderOptionsPlugin({
       minimize: PRODUCTION_MODE
-    })
+    }),
+    new CleanWebpackPlugin('dist'),    
   ]
 };
