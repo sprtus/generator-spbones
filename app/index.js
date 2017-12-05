@@ -35,7 +35,7 @@ module.exports = class extends Generator {
         type: "password",
         name: "password",
         message: "Password: ",
-      },
+      }
     ]).then(answers => {
       this.destinationRoot(answers.appFolder);
       this.fs.copyTpl(
@@ -62,12 +62,13 @@ module.exports = class extends Generator {
         this.destinationPath('.gitignore')
       );
 
+
       this.fs.copy(
-        this.templatePath('app.js'),
+        this.templatePath('blank.nothing'),
         this.destinationPath('src/js/app.js')
       );
       this.fs.copy(
-        this.templatePath('app.css'),
+        this.templatePath('reset.css'),
         this.destinationPath('src/css/app.scss')
       );
       
