@@ -79,7 +79,8 @@ module.exports = class extends Generator {
       this.npmInstall(['sass-loader'], { 'save-dev': true });
       this.npmInstall(['extract-text-webpack-plugin'], { 'save-dev': true });
       this.npmInstall(['copy-webpack-plugin'], { 'save-dev': true });
-
+      this.npmInstall(["clean-webpack-plugin"], { 'save-dev': true });
+      
       done();
     });
   }
