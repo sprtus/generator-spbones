@@ -1,0 +1,7 @@
+{
+  "sourceDirectory": "dist",
+  "remoteFolders": [
+    "/_catalogs/masterpage/<%= name %>",
+    "/_catalogs/wp"
+  ]
+}

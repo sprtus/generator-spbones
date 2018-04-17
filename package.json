@@ -27,9 +27,11 @@
   },
   "homepage": "https://github.com/oldrivercreative/generator-spbones#readme",
   "dependencies": {
+    "chalk": "^2.4.0",
+    "mkdirp": "^0.5.1",
     "yeoman-generator": "^2.0.1"
   },
   "files": [
-    "app"
+    "generators"
   ]
 }
