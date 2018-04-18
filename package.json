@@ -1,6 +1,6 @@
 {
   "name": "generator-spbones",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Yeoman generator for a SharePoint front-end workspace capable of deploying to said SP site.",
   "main": "index.js",
   "scripts": {
@@ -29,6 +29,7 @@
   "dependencies": {
     "chalk": "^2.4.0",
     "mkdirp": "^0.5.1",
+    "npm": "^5.8.0",
     "yeoman-generator": "^2.0.1"
   },
   "files": [
